@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url(Weathering.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+/*----- Background Video -----*/
+Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+div.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+div.maincontent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 80%;
+}
+/*----- Title -----*/
+div.title-container {
+    position: relative;
+}
+div.title-container h1 {
+    color: white;
+    font-size: 120px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+/*----- Main Form Container -----*/
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    width: 100%;
+    height: 100%;
+    padding: 60px 50px;
+
+    opacity: 0.3;
+    transition: 0.3s;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px gray;
+}
+form:hover {
+    opacity: 1;
+}
+div.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
+}
+div.login-container h2 {
+    font-size: 50px;
+}
+/*----- Form Title -----*/
+form div.form-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+form div.form-title h2 {
+    text-align: center;
+    font-size: 70px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 1;
+}
+/*----- Input Container -----*/
+form div.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+form label {
+    display: block;
+    position: relative;
+    left: 0;
+    font-size: 25px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 1;
+}
+form input {
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+form div.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+form div.button button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: linear-gradient(to right, red , yellow);
+    border: none;
+    transition: 0.2s;
+}
+form div.button button:hover {
+    color: white;
+    background-color: white;
+}
