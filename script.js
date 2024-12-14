@@ -8,7 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Simple validation (you can add more complex validation)
     if (username === 'user' && password === 'password') {
         alert('Login successful!');
-        window.location.href = 'https://teams.microsoft.com/v2/'; // Redirect to another page
+        window.location.href = 'https://sites.google.com/view/lyncolnsportfolio/user-log-in/home'; // Redirect to another page
     } else {
         alert('Invalid username or password.');
     }
