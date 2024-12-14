@@ -7,7 +7,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     // Simple validation (you can add more complex validation)
     if (username === 'user' && password === 'password') {
-        alert('Login successful!');
         document.getElementById('homeLink').style.display = 'block';
         document.getElementById('homeLink').click(); // Click the link to navigate to the home page
     } else {
